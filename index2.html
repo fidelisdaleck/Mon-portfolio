@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page secondaire</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="image/logoli.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+</head>
+
+<body>
+    <!-- Barre de navigation -->
+    <header>
+        <div class="title">
+            <h3>Mon port-folio.</h3>
+        </div>
+        <div class="nav-bar">
+            <ul class="links desktop-links">
+                <li><a href="index1.html">Acceuil</a></li>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#projet">Mes Projets</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+            <div class="burger-menu-button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="burger-menu">
+            <ul class="links">
+                <li><a href="index1.html">Acceuil</a></li>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#projet">Mes Projets</a></li>
+                <li><a href="index3.html">Contact me</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- contenue principale de la page -->
+
+    <main>
+
+        <!-- A propos de moi -->
+
+        <section>
+            <div class="container">
+                <div class="banner">
+                    <img src="image/P-F_Image.jpg" alt="Ma photo">
+                    <p>Salut, c'est moi, Lithi. &gt;_&lt;</p>
+                </div>
+
+                <h1 id="about-me">À propos de moi</h1>
+
+                <div class="mon-brefing">
+                    <p>
+                        Je suis <b>Lithina</b>, développeuse web de formation, passionnée par le design d’interfaces
+                        intuitives et modernes.
+                        J’aime apprendre de nouvelles technologies et mettre mes compétences au service de projets
+                        concrets.
+                        Dans ce portfolio, vous découvrirez mes projets réalisés avec HTML, CSS, ainsi que mes premiers
+                        pas avec JavaScript,
+                        PHP et MySQL. Mon ambition est de devenir une développeuse polyvalente, capable de résoudre des
+                        problèmes réels avec des solutions élégantes. Je suis curieuse, rigoureuse et toujours prête à
+                        relever de nouveaux défis.
+                    </p>
+
+                    <a href="mon-cv.pdf" download class="btn-cv">
+                        <i class="fa-solid fa-download"></i>
+                        Télécharger mon CV
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mes competences et mes projets d'apprentissages -->
+        <section>
+            <div class="savoir-faire">
+                <h1><i class="fas fa-user" style="color: purple"></i> Mes compétences</h1>
+                <div class="competence">
+                    <ul>
+                        <li>
+                            <p>HTML / CSS</p>
+                            <div class="progress-bar">
+                                <div class="bar bar-html">96%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>MySQL</p>
+                            <div class="progress-bar">
+                                <div class="bar bar-mysql">75%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <p>PHP & JS</p>
+                            <div class="progress-bar">
+                                <div class="bar bar-php">15%</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="projet" id="projet">
+                <h1><i class="fas fa-gem" style="color: purple"></i> Mes projets d'apprentissage</h1>
+
+                <div class="first-site">
+                    <h3><span>|</span> Site web vitrine</h3>
+                    <p>
+                        Ce site, realise a l'aide de HTML, CSS et um peu de JavaScript m'a permis d'approfondir mes connaissances en grille CSS et
+                        Flexbox.
+                    </p>
+                    <a href="https://recette-xwzp.onrender.com">https://recette-xwzp.onrender.com</a>
+                </div>
+
+                <div class="second-site">
+                    <h3><span>|</span> Site de transport pour les étudiants de l'IUT</h3>
+                    <p>
+                        Ce projet m’a permis d’apprendre à utiliser Bootstrap, à déployer un site sur Vercel ou Render,
+                        et à travailler avec GitHub.
+                    </p>
+                    <a href="lelaatrans.vercel.app">lelaatrans.vercel.app</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mes diplomes -->
+        <section>
+            <div class="titre">
+                <h1><i class="fa-solid fa-star" style="color: purple"></i> Mes diplômes</h1>
+            </div>
+
+            <div class="diplome">
+                <div class="dip">
+                    <i class="fas fa-graduation-cap"></i>
+                    <p class="annee">2023-2024</p>
+                    <h2>Lycée bilingue de Bonaberi</h2>
+                    <hr>
+                    <h4>Baccalauréat scientifique</h4>
+                </div>
+
+                <div class="dip">
+                    <i class="fas fa-graduation-cap"></i>
+                    <p class="annee">2025-2026</p>
+                    <h2>Institut Universitaire des Technologies</h2>
+                    <hr>
+                    <h4>DUT - Génie Informatique</h4>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-title">
+                <h1><i class="fa-solid fa-envelope" style="color: purple;"></i> Me contacter</h1>
+                <p>Vous pouvez me retrouver sur les réseaux ci-dessous :</p>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://wa.me/+237680279842" target="_blank" class="whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.facebook.com/Deb lf" target="_blank" class="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/Fidelis Daleck" target="_blank" class="linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/fidelisdaleck" target="_blank" class="github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <!-- <a href="https://www.tiktok.com/@Lithina" target="_blank" class="tiktok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://x.com/Lithina" target="_blank" class="x">
+                    <i class="fab fa-x-twitter"></i>
+                </a> -->
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="container1">
+            <div class="menu">
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="index1.html">Accueil</a></li>
+                    <li><a href="#about-me">À propos</a></li>
+                    <li><a href="#projet">Projets</a></li>
+                    <li><a href="index3.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-me">
+                <h2>Contactez-moi</h2>
+                <p class="footer-contact">
+                    <i class="fa-solid fa-phone" style="color: purple;"></i> 680279842 / 657856201
+                </p>
+                <p>
+                    <i class="fa-solid fa-envelope" style="color: purple;"></i> fidelisdaleck386@gmail.com
+                </p>
+            </div>
+
+            <div class="socials">
+                <h2>Réseaux Sociaux</h2>
+                <div class="icons">
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="copy">
+            &copy; Mon Portfolio 2025. Tous droits réservés.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

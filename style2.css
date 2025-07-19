@@ -1,0 +1,588 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.mon-brefing .button button body {
+    color: #1a253b;
+}
+
+/* --------------- LE HEADER! T'ES CANON------------------ */
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding: 20px 10px;
+    background-color: rgb(222, 222, 252);
+    backdrop-filter: blur(25px);
+    position: relative;
+}
+
+.title {
+    color: #890caf;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar ul.desktop-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-bar li {
+    list-style: none;
+}
+
+.nav-bar .burger-menu-button {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    color: #1a253b;
+    margin-left: 20px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #1a253b;
+    font-size: 18px;
+}
+
+.nav-bar a:hover {
+    color: #890caf;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+/* Menu burger caché par défaut */
+.burger-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #890caf;
+    z-index: 1000;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.burger-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.burger-menu li,
+.burger-menu a {
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+    .nav-bar ul.desktop-links {
+        display: none;
+    }
+
+    .nav-bar .burger-menu-button {
+        display: block;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .burger-menu.active {
+        display: block;
+    }
+}
+
+
+/* -------------------------SETION BANNER ! DESOLE LITHI-------------------------- */
+
+
+.container .banner {
+    width: 100%;
+    background-color: rgba(210, 228, 245, 0.616);
+    padding: 35px;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.container .banner img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    object-fit: cover;
+}
+
+.container .banner p {
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.container h1 {
+    margin: 30px 0 20px;
+    text-align: center;
+    color: #774577;
+    font-size: 28px;
+}
+
+.container .mon-brefing {
+    text-align: justify;
+    padding: 0 30px;
+    margin-bottom: 35px;
+    font-size: 18px;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+.btn-cv {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 18px;
+    background-color: #890caf;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-cv:hover {
+    background-color: #edbbfc;
+    color: #890caf;
+    transform: translateY(-2px);
+}
+
+.btn-cv i {
+    font-size: 18px;
+}
+
+/*--------------------------- SECTION MES COMPETENSES FAIT PAR GEAZY ---------------------*/
+
+
+/* Titre général */
+.savoir-faire h1,
+.projet h1 {
+    margin: 50px 0 30px 80px;
+    color: #774577;
+    font-size: 26px;
+}
+
+/* Compétences */
+.competence ul {
+    list-style: none;
+    margin-left: 60px;
+    padding: 0;
+}
+
+.competence ul li {
+    margin-bottom: 20px;
+}
+
+.competence p {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+/* Barres de progression */
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 80%;
+    max-width: 500px;
+    height: 24px;
+}
+
+.bar {
+    height: 100%;
+    color: white;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.bar-html {
+    background-color: rgb(91, 91, 250);
+    width: 96%;
+}
+
+.bar-mysql {
+    background-color: rgb(91, 91, 250);
+    width: 75%;
+}
+
+.bar-php {
+    background-color: rgb(241, 72, 72);
+    width: 15%;
+}
+
+/* Projets */
+.first-site,
+.second-site {
+    margin: 0 20px 40px;
+}
+
+.first-site span,
+.second-site span {
+    font-size: 30px;
+    color: #890caf;
+    margin-right: 10px;
+}
+
+.first-site h3,
+.second-site h3 {
+    margin: 0 0 10px 30px;
+    font-size: 20px;
+}
+
+.first-site p,
+.second-site p {
+    text-align: justify;
+    margin: 0 10px 10px;
+    font-size: 16px;
+    color: #1a1a1a;
+}
+
+.first-site a,
+.second-site a {
+    margin-left: 10px;
+    color: #890caf;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .savoir-faire h1,
+    .projet h1 {
+        margin-left: 20px;
+        font-size: 22px;
+    }
+
+    .competence ul {
+        margin-left: 20px;
+    }
+
+    .progress-bar {
+        width: 100%;
+    }
+}
+
+
+
+/* -----------------------SECTION MES DIPLOMES!---------------------------- */
+
+
+/* Titre principal */
+.titre h1 {
+    margin: 50px 0 40px 80px;
+    color: #774577;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Conteneur des diplômes */
+.diplome {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin: 0 20px 60px;
+}
+
+/* Carte diplôme */
+.dip {
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    text-align: center;
+    width: 280px;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dip:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Icône */
+.dip .fas {
+    font-size: 60px;
+    color: #890caf;
+    margin-bottom: 15px;
+}
+
+/* Texte */
+.dip .annee {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.dip h2 {
+    font-size: 18px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.dip hr {
+    border: none;
+    height: 2px;
+    background-color: #2f4c8d;
+    width: 60%;
+    margin: 10px auto;
+}
+
+.dip h4 {
+    font-size: 16px;
+    color: #444;
+    margin-top: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .titre h1 {
+        margin-left: 20px;
+        font-size: 24px;
+    }
+
+    .dip {
+        width: 90%;
+    }
+}
+
+
+
+/* --------------BOUTON TELECHARGER--------------------------------CV DE LITHI------------- */
+
+
+.btn-cv {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background-color: #890caf;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-cv i {
+    font-size: 18px;
+}
+
+.btn-cv:hover {
+    background-color: #6f0894;
+    transform: translateY(-2px);
+}
+
+
+
+/* ---------------------------SECTION CONTACT! -------- */
+
+
+#contact {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-title h1 {
+    color: #774577;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact-title p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 40px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.social-icons a {
+    font-size: 28px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+/* Réseaux couleurs */
+.whatsapp {
+    background-color: #25D366;
+}
+
+.facebook {
+    background-color: #1877f2;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.github {
+    background-color: #333;
+}
+
+/* .tiktok {
+    background-color: #000;
+}
+
+.x {
+    background-color: #1a1a1a;
+} */
+
+.social-icons a:hover {
+    transform: scale(1.15);
+}
+
+/* ---------------------SECTION FOOTER!------------------------------------- */
+
+footer {
+    background-color: #1a253b;
+    color: white;
+    padding: 30px;
+
+}
+footer {
+    background: #111;
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+footer .container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    text-align: left;
+}
+
+.container1 h2 {
+    font-size: 22px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.container1 .menu ul,
+.container1 .contact-me,
+.container1 .socials {
+    padding: 0;
+}
+
+.container1 .menu li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+.container1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.container1 a:hover {
+    color: #890caf;
+    font-size: 17px;
+    transition: 0.3s ease;
+}
+
+.container1 .contact-me p,
+.container1 .socials .icons a {
+    margin-bottom: 10px;
+}
+
+.container1 .socials .icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.container1 .socials .icons a {
+    font-size: 20px;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.container1 .socials .icons a:hover {
+    color: #890caf;
+    transform: scale(1.2);
+}
+
+footer hr {
+    margin: 30px auto 10px;
+    border: 0;
+    height: 1px;
+    background: #444;
+    width: 80%;
+}
+
+footer .copy {
+    text-align: center;
+    font-size: 16px;
+    color: #aaa;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container1 .socials .icons {
+        justify-content: center;
+    }
+}
+
